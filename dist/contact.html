@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Контакты</title>
+    <meta name="description" content="ЗТЗ">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container container">
+
+            <a href="index.html"><img class="header__logo" src="icons/logo.svg" alt="logo"></a>
+            <a href="index.html"><h1 class="header__text">ЗАГОРСКИЙ<br> ТРУБНЫЙ<br> ЗАВОД</h1></a>
+            
+            <ul class="container__list">
+                <li class="container__list-item"><a href="index.html">Компания</a></li>
+                <li class="container__list-item"><a href="info.html">Продукция</a></li>
+                <li class="container__list-item"><a href="contact.html">Контакты</a></li>
+                <li class="container__list-image"><a href=""><img src="icons/search.svg" alt=""></a></li>
+                <li class="container__list-item" id="search"><a href="">Поиск</a></li>
+                <li class="nav-menu__list-burger">
+                    <div class="hamburger-menu">
+                        <input id="menu__toggle" type="checkbox">
+                        <label class="menu__btn" for="menu__toggle">
+                            <span></span>
+                        </label>
+                        
+                        <ul class="menu__box">
+                            <li><a class="menu__item" style="color: #fff;" href="info.html">Продукция</a></li>
+                            <li><a class="menu__item" style="color: #fff;" href="index.html">Компания</a></li>
+                            <li><a class="menu__item" style="color: #fff;" href="contact.html">Контакты</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>    
+    </header>
+    <section class="main-section-contacts">
+        <div class="main-section-contacts__contacts-container contacts-container">
+            <h2 class="contacts-container__title">Контакты</h2>
+            <img src="img/contacts/image.png" alt="img" class="contacts-container__img">
+            <div class="main-section-contacts__wrapper contacts-wrapper">
+                <div class="contacts-wrapper__first-wrap">
+                    <h4 class="contacts-wrapper__title">Московский офис:</h4>
+                    <p class="contacts-wrapper__text">127051, Москва, Малая Сухаревская площадь, дом 10, 8 этаж.</p>
+                    <h4 class="contacts-wrapper__title">Юридический адрес:</h4>
+                    <p class="contacts-wrapper__text">141320, Московская область, г. Сергиев-Посад, г. Пересвет, ул. Бабушкина, д. 9 (юридический адрес).</p>
+                </div>
+                
+                <div class="contacts-wrapper__second-wrap">
+                    <h4 class="contacts-wrapper__title">Тел./факс: +7 (495) 988-06-86</h4>
+                    <p class="contacts-wrapper__text">E-mail: info@ztz.ru</p>
+                    <p class="contacts-wrapper__text">Отдел кадров: personal@ztz.ru</p>
+                    <h4 class="contacts-wrapper__title">Фактический адрес:</h4>
+                    <p class="contacts-wrapper__text">Московская область, г. Сергиев-Посад, г. Пересвет, промышленная зона 50 (напротив д. Коврово)</p>
+                </div>
+            
+            </div>
+            <a class="contacts-container__button" target="_blank" href="https://www.google.ru/maps/place/Загорский+трубный+завод/@56.4304477,38.1490985,17z/data=!4m14!1m7!3m6!1s0x46b4c1672f9e272d:0xbc6cfaa345d83267!2z0JfQsNCz0L7RgNGB0LrQuNC5INGC0YDRg9Cx0L3Ri9C5INC30LDQstC-0LQ!8m2!3d56.4310876!4d38.1495666!16s%2Fg%2F11sp50qbyz!3m5!1s0x46b4c1672f9e272d:0xbc6cfaa345d83267!8m2!3d56.4310876!4d38.1495666!16s%2Fg%2F11sp50qbyz?entry=ttu">На карте</a>
+        </div>
+    </section>
+
+    <section class="feedback">
+        <div class="feedback__feedback-container feedback-container">
+            <h2 class="feedback-container__title">Обратная связь</h2>
+                <form class="feedback-container__form form">
+                    <ul class="form__first-wrapper">
+                        <li class="form__row">
+                            <input type="text" id="second-name" placeholder="Фамилия:">
+                            <label for="second-name">Фамилия</label>
+                        </li>
+                        <li class="form__row">
+                            <input type="text" id="name" placeholder="Имя:">
+                            <label for="name">Имя</label>
+                        </li>
+                        <li class="form__row">
+                            <input type="text" id="surname" placeholder="Отчество:">
+                            <label for="surname">Отчество</label>
+                        </li>
+                    </ul>
+                    <ul class="form__second-wrapper">
+                        <li class="form__row">
+                            <input type="text" id="phone" placeholder="Телефон:">
+                            <label for="phone">Телефон</label>
+                        </li>
+                        <li class="form__row">
+                            <input type="text" id="email" placeholder="E-Mail:">
+                            <label for="email">E-Mail</label>
+                        </li>
+                    </ul>
+                </form>
+            <textarea class="form__area" name="message" id="msg-text" cols="80" rows="6" placeholder="Текст сообщения: "></textarea>
+            <label for="msg-text" class="msg-text-label">Текст сообщения</label>
+            <a href="#" class="feedback-container__button">Отправить</a>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__left-wrapper left-wrapper">
+                <img src="icons/logo.svg" alt="logo" class="left-wrapper__img">
+                <p class="left-wrapper__text">
+                    «Индустриальная эстетика» —
+                    способ по-новому взглянуть на
+                    внутренний технологический мир 
+                    современного завода.
+                </p>
+            </div>
+    
+            <div class="footer__right-wrapper right-wrapper">
+                <div class="right-wrapper__group-1">
+                    <h5 class="right-wrapper__title">КОМПАНИЯ</h5>
+                    <p class="right-wrapper__text">Ключевые показатели</p>
+                    <p class="right-wrapper__text">Руководство</p>
+                    <h5 class="right-wrapper__title">МЕДИА-ЦЕНТР</h5>
+                    <h5 class="right-wrapper__title">КОНТАКТЫ</h5>
+                    <img src="icons/Social-Icons.svg" alt="social-icons" class="right-wrapper__social3">
+                </div>
+    
+                <div class="right-wrapper__group-2">
+                    <h5 class="right-wrapper__title">КЛИЕНТАМ</h5>
+                    <p class="right-wrapper__text">Интернет магазин</p>
+                    <p class="right-wrapper__text">Заключение договора</p>
+                    <p class="right-wrapper__text">Проверка сертификатов</p>
+                    <p class="right-wrapper__text">Проверка доверенностей</p>
+                    <h5 class="right-wrapper__title">ПРОДУКЦИЯ</h5>
+                    <p class="right-wrapper__text">Техническая документация</p>
+                    <p class="right-wrapper__text">Полезная документация</p>
+                    <p class="right-wrapper__text">Вспомогательная продукция</p>
+                </div>
+    
+                <div class="right-wrapper__group-3">
+                    <h5 class="right-wrapper__title">ПОСТАВЩИКАМ</h5> 
+                    <p class="right-wrapper__text">Политика закупок</p>
+                    <p class="right-wrapper__text">Торговые площадки</p>
+                    <p class="right-wrapper__text">Документы</p>
+                    <p class="right-wrapper__text">Контакты</p>
+                    <h5 class="right-wrapper__title">ОТВЕТСТВЕННОСТЬ</h5>
+                    <h5 class="right-wrapper__title">КАРЬЕРА</h5>
+                    <p class="right-wrapper__text">Вакансии</p>
+                    <p class="right-wrapper__text">Развитие персонала</p>
+                    <p class="right-wrapper__text">Студентам</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

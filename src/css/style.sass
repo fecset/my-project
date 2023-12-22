@@ -1,0 +1,1537 @@
+@font-face
+    font-family: Montserrat
+    font-style: normal
+    font-weight: 400
+    src: url(../fonts/Montserrat-Regular.woff2)
+
+@font-face
+    font-family: Montserrat
+    font-style: normal
+    font-weight: 700
+    src: url(../fonts/Montserrat-Bold.woff2)
+
+@font-face
+    font-family: Montserrat
+    font-style: normal
+    font-weight: 500
+    src: url(../fonts/Montserrat-Medium.woff2)
+    
+*
+    box-sizing: border-box
+    
+html
+    scroll-behavior: smooth
+.container
+    max-width: 1440px
+    margin: 0 auto
+
+.main-section
+    position: relative
+    height: 702px
+    padding-top: 16px
+    overflow: hidden
+    background-image: url(../img/main/background.png)
+    background-size: cover
+    &__nav-container
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        max-width: 1440px
+        height: 154px
+        align-items: center
+    &__content-container
+        max-width: 1440px
+        margin: 0 auto
+    &__header
+        display: flex
+        flex-direction: row
+        a
+            text-decoration: none
+            color: #fff
+    &__logo
+        margin-top: 28px
+        margin-left: 140px
+    &__name
+        color: white
+        font-family: Montserrat
+        font-size: 30px
+        font-style: normal
+        font-weight: 700
+        line-height: normal
+        margin-left: 14px
+        margin-top: 28px
+    &__title
+        position: absolute
+        top: 289px
+        color: #FFF
+        text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25)
+        font-family: Montserrat
+        font-size: 50px
+        font-style: normal
+        font-weight: 700
+        line-height: normal
+        margin-left: 140px
+    &__text
+        position: absolute
+        width: 833px
+        top: 397px
+        color: #FFF
+        font-family: Montserrat
+        font-size: 22px
+        font-style: normal
+        font-weight: 400
+        line-height: normal 
+        margin-left: 140px
+    .buttons
+        position: absolute
+        top: 470px
+        &__main-btn
+            display: block
+            margin-left: 140px
+            text-decoration: none
+            padding-top: 4px
+            padding-left: 48px
+            border: none
+            border-radius: 30px
+            background: linear-gradient(rgba(243, 112, 50, 1), rgba(249, 76, 47, 1))
+            width: 284px
+            height: 43px
+            color: #FFF
+            font-family: Montserrat
+            font-size: 18px
+            font-style: normal
+            font-weight: 500
+            line-height: normal
+            box-shadow: 4px 3px 4px 1px rgba(0, 0, 0, 0.25) inset
+        img
+            padding-top: 8px
+            padding-left: 20px
+        &__main-btn:hover
+            background:#ff7300
+
+.nav-menu
+    &__list
+        display: flex
+        flex-direction: row
+    .nav-menu__list-item
+        color: #FFF
+        font-family: Montserrat
+        font-size: 25px
+        font-style: normal
+        font-weight: 400
+        line-height: normal
+        margin-right: 30px
+    .nav-menu__list-burger
+        display: none
+        @media (max-width: 767px)
+            display: block
+            img
+                width: 70px
+                height: 38px
+    a
+        color: #fff
+        text-decoration: none
+
+.gradient
+    position: absolute
+    background: linear-gradient(360deg, #EDEDED 66.35%, rgba(255, 255, 255, 0.00) 88.97%)   
+    width: auto
+    height: 78px
+    top: 655px
+    right: 0
+    left: 0
+
+.second-section
+    height: 1310px
+    background-image: url(../img/second-section/background.png)
+    background-size: cover
+    &__container
+        max-width: 1440px
+        margin: 0 auto
+        padding-top: 47px
+    &__title
+        color: #F37032
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25)
+        font-family: Montserrat
+        font-size: 35px
+        font-style: normal
+        font-weight: 700
+        line-height: normal
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-bottom: 33px
+    .buttons 
+        &__main-btn
+            display: block
+            padding-top: 13px
+            text-decoration: none
+        &__main-btn:hover
+            background:#ff7300
+    
+    
+    .activity
+        height: 406px
+        border-radius: 20px 0px 0px 20px
+        margin: 100px auto
+        width: 1200px
+        max-width: 100%
+        &__container
+            margin: 0 auto
+            max-width: 1440px
+            display: flex
+            flex-direction: row
+
+        &__wrapper
+            border: 1px solid #F04C2F
+            display: flex
+            align-self: center
+            justify-content: center
+            flex-direction: column
+            width: 600px
+            height: 406px
+            border-radius: 20px
+        &__title
+            color: #F37032
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25)
+            font-family: Montserrat
+            font-size: 35px
+            font-style: normal
+            font-weight: 700
+            line-height: normal
+            padding-top: -20px
+            padding-left: 12px
+            width: 560px
+        &__info-text
+            color: #6D6D6D
+            font-family: Montserrat
+            font-size: 18px
+            font-style: normal
+            font-weight: 400
+            line-height: normal
+            width: 518px
+            height: 176px
+            padding-top: 12px
+            padding-left: 12px
+        &__img
+            width: 565px
+            height: 406px
+            background-size: cover
+            box-shadow: 5px 4px 4px 0 rgba(0, 0, 0, 0.25) inset
+            border-radius: 20px 
+    .info-btn
+        display: flex
+        flex-direction: row
+        justify-content: space-evenly
+        margin-right: 135px
+        .btn-item
+            position: relative
+            top: -45px
+            margin-left: 87px
+            filter: drop-shadow(5px 4px 4px rgba(0, 0, 0, 0.25))
+            width: 268px
+            height: 111px
+            border-radius: 15px
+            background: linear-gradient(180deg, #F37032 0%, #F04C2F 100%)
+            &__text
+                position: relative
+                top: -90px
+                left: 90px
+                color: #FFF
+                font-family: Montserrat
+                font-size: 20px
+                font-style: normal
+                font-weight: 700
+                line-height: normal
+                width: 268px
+            #btn-item__text
+                top: -78px
+            &__img
+                margin: 27px 10px 27px 18px
+
+                
+    .buttons
+        position: absolute
+        top: 242px
+        left: 94px
+        &__main-btn
+            text-align: center
+            color: #FFF
+            font-family: Montserrat
+            font-size: 18px
+            font-style: normal
+            font-weight: 700
+            line-height: normal
+            width: 160px
+            height: 48.75px
+            border-radius: 20px
+            border: none
+            background: linear-gradient(180deg, #F37032 0%, #F04C2F 100%)
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset
+        p
+            width: 146px
+            height: 20px
+        img
+            margin-top: 5px
+            margin-left: 136px
+//Слайдер
+
+#frame
+  margin: 0 auto
+  width: 800px
+  max-width: 100%
+  text-align: center
+
+  input[type=radio]
+    display: none
+
+  label
+    cursor: pointer
+    text-decoration: none
+
+#slides
+  border-radius: 25px
+  border-top: 30px solid #F04C2F
+  border-bottom: 40px solid #F04C2F
+
+  position: relative
+  height: 490px
+  z-index: 1
+
+#overflow
+  width: 100%
+  overflow: hidden
+
+#frame1:checked ~ #slides .inner
+  margin-left: 0
+
+#frame2:checked ~ #slides .inner
+  margin-left: -100%
+
+#frame3:checked ~ #slides .inner
+  margin-left: -200%
+
+
+#slides
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25)
+    .inner
+        transition: margin-left 800ms cubic-bezier(0.77, 0, 0.175, 1)
+        width: 400%
+        line-height: 0
+        height: 430px
+        .frame
+            width: 25%
+            float: left
+            display: flex
+            justify-content: center
+            height: 100%
+            color: #FFF
+            &__content
+                padding-top: 10px
+                border-bottom-left-radius: 20px
+                border-bottom-right-radius: 20px
+                color: #FFF
+                text-align: center
+                font-family: Montserrat
+                font-size: 20px
+                font-style: normal
+                font-weight: 700
+                line-height: normal
+                width: 280px
+                height: 70px
+                background: linear-gradient(0deg, #F37032 0%, #F04C2F 100%)
+                box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25) inset
+    .frame_1
+        background-image: url(https://komplektatsiya.gazprom.ru/d/story/ea/234/dxfm0104_resized_20170529_064620281.jpg)
+        background-size: 800px 430px
+    .frame_2
+        background-image: url(https://i2.wp.com/severtradespb.ru/wp-content/uploads/2020/04/215.jpg?fit=1024%2C654&ssl=1)
+        background-size: 800px 430px
+    .frame_3
+        background-image: url(https://sibfish24.ru/wp-content/uploads/2023/07/0db5e747ecbc0b92477bc00eacf47088dc39efca.jpg)
+        background-size: 800px 430px
+
+
+#bullets
+  margin: 30px 0 0
+  text-align: center
+  label
+    display: inline-block
+    width: 20px
+    height: 20px
+    border-radius: 100%
+    background: #ccc
+    margin: 0 10px
+
+#frame1:checked ~ #bullets label:nth-child(1), #frame2:checked ~ #bullets label:nth-child(2), #frame3:checked ~ #bullets label:nth-child(3)
+  border: 2px solid #F37032
+  background: #ffeae0
+
+
+.third-section
+    height: 696px
+    background-image: url(../img/second-section/background.png)
+    background-size: cover
+    border-top: 2px solid #858585
+    border-bottom: 2px solid #858585
+    .container 
+        height: 696px
+        max-width: 1440px
+        margin: 0 auto
+        display: flex
+        flex-direction: row
+    .social
+        position: relative
+        height: 696px
+        width: 1200px
+        max-width: 100%
+        margin: 60px auto
+        display: flex
+        flex-direction: row
+        &__wrapper
+            display: flex
+            flex-direction: column
+        &__button
+            position: relative
+            padding: 8px 30px 8px 30px
+            text-decoration: none
+            top: 100px
+            color: #6D6D6D
+            font-family: Montserrat
+            font-size: 18px
+            font-style: normal
+            font-weight: 500
+            line-height: normal
+            width: 284px
+            height: 43px
+            border-radius: 30px
+            border: 1px solid #F04C2F
+            background: linear-gradient(180deg, #FFF 0%, #E1E1E1 100%)
+            box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25)
+            img
+                height: 13px
+            &__button:hover
+                background-color: #F04C2F
+        &__title
+            width: 484px
+            height: 102px
+            color: #F37032
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25)
+            font-family: Montserrat
+            font-size: 35px
+            font-style: normal
+            font-weight: 700
+            line-height: normal
+            margin-top: 100px
+        &__info-text
+            width: 364.165px
+            height: 159px
+            color: #6D6D6D
+            font-family: Montserrat
+            font-size: 18px
+            font-style: normal
+            font-weight: 400
+            line-height: normal
+        &__img-text
+            position: absolute
+            width: 131px
+            height: 26px
+            color: #FFF
+            font-family: Montserrat
+            font-size: 20px
+            font-style: normal
+            font-weight: 500
+            line-height: normal
+            left: 460px
+            top: 460px
+        &__date
+            position: absolute
+            width: 96px
+            height: 10px
+            color: #FFF
+            font-family: Montserrat
+            font-size: 12px
+            font-style: normal
+            font-weight: 500
+            line-height: normal
+            left: 460px
+            top: 487px
+        &__img
+            margin-top: 50px
+            margin-left: -58px
+            border-radius: 20px
+            width: 732px
+            height: 465px
+            box-shadow: 5px 4px 4px 1px rgba(0, 0, 0, 0.25) inset
+
+
+
+.footer
+    background-image: url(../img/second-section/background.png)
+    background-size: cover
+    .container
+        display: flex
+        flex-direction: row
+        max-width: 1440px
+        margin: 0 auto
+    .left-wrapper
+        width: 535px
+        height: 334px
+        border-right: 2px solid #858585
+        &__text
+            width: 310px
+            height: 146px
+            color: #6D6D6D
+            font-family: Montserrat
+            font-size: 18px
+            font-style: normal
+            font-weight: 400
+            line-height: normal
+            margin-left: 150px
+        &__img
+            margin-top: 60px
+            margin-left: 230px
+            width: 119px
+            height: 90px
+    .right-wrapper
+        display: flex
+        align-items: flex-start
+        justify-content: flex-start
+        &__title
+            color: #F37032
+            font-family: Montserrat
+            font-size: 14px
+            font-style: normal
+            font-weight: 700
+            line-height: normal
+        &__text
+            color: #6D6D6D
+            font-family: Montserrat
+            font-size: 14px
+            font-style: normal
+            font-weight: 400
+            line-height: normal
+        &__social, &__social2, &__social3
+            margin-top: 11px
+        &__group-1, &__group-2, &__group-3
+            margin-top: 43px
+            margin-left: 46px
+        &__group-1
+            margin-left: 176px
+        p
+            margin-top: 7px
+        h5
+            margin-top: 11px
+
+// 2 страница
+
+.header
+    background-color: #f0f0f0
+    height: 159px
+
+    .container
+        display: flex
+        flex-direction: row
+        max-width: 1440px
+        margin: 0 auto
+        a
+            text-decoration: none
+            color:  #000
+        .container__list
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            width: 725px
+            height: 154px
+            align-items: center
+            margin-left: 50px
+            .container__list-item
+                color: #6D6D6D
+                font-family: Montserrat
+                font-size: 25px
+                font-style: normal
+                font-weight: 400
+                line-height: normal
+                @media (max-width: 1199px)
+                    font-size: 25px
+                    margin-right: 10px
+                @media (max-width: 991px)
+                    font-size: 21px
+                    margin-right: 10px
+
+            .nav-menu__list-burger
+                display: none
+                @media (max-width: 767px)
+                    display: block
+
+            a
+                color: #6D6D6D
+                text-decoration: none
+    &__logo
+        width: 149px
+        height: 112px
+        margin: 15px
+        margin-left: 120px
+    &__text
+        color: #000
+        font-family: Montserrat
+        font-size: 30px
+        font-style: normal
+        font-weight: 700
+        line-height: normal
+
+.main-section-info
+    background-image: url(../img/second-section/background.png)
+    background-size: cover
+    height: 2169px
+    position: relative
+    border-bottom: 2px solid #858585
+    &__title
+        color: #F37032
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25)
+        font-family: Montserrat
+        font-size: 35px
+        font-style: normal
+        font-weight: 700
+        line-height: normal
+        padding-top: 46px
+        margin-left: 444px
+    &__container
+        position: relative
+        max-width: 1440px
+        margin: 0 auto
+    .wrapper
+        display: inline-flex
+        margin-top: 31px
+        flex-wrap: wrap
+        flex: 1
+        justify-content: center
+        .wrapper__box
+            margin-left: 30px
+            margin-bottom: 32px
+            width: 565px
+            height: 480px
+            border-radius: 20px
+            background: linear-gradient(180deg, #F37032 0%, #F04C2F 100%)
+            box-shadow: 5px 5px 4px 2px rgba(0, 0, 0, 0.25)
+            display: flex
+            flex-direction: column
+            align-items: flex-end
+            @media (max-width: 1199px)
+                margin-top: 30px
+                width: 586px
+                height: 442.711px
+                margin-left: 0px
+            @media (max-width: 991px)
+                margin-left: 0px
+            @media (max-width: 767px)
+                margin-top: 90px
+                width: 500px
+                height: 332.711px
+                margin-left: 0px
+        &__title
+            display: flex
+            align-self: flex-start
+            color: #FFF
+            font-family: Montserrat
+            font-size: 20px
+            font-style: normal
+            font-weight: 700
+            line-height: normal
+            margin-top: 20px
+            margin-left: 38px
+            margin-bottom: 25px
+            @media (max-width: 1199px)
+                align-self: center
+        &__img
+            display: flex
+            align-self: flex-start
+            width: 348px
+            height: 410px
+            @media (max-width: 1199px)
+                align-self: center
+                width: 586px
+                height: 381px
+        #wrapper__img1
+            margin-top: -357px 
+            @media (max-width: 1199px)
+                margin-top: -71px
+            @media (max-width: 767px)
+                margin-top: -90px
+        #wrapper__img2
+            margin-top: -313px 
+            @media (max-width: 1199px)
+                margin-top: -71px
+            @media (max-width: 767px)
+                margin-top: -80px                
+        #wrapper__img3
+            margin-top: -202px 
+            @media (max-width: 1199px)
+                margin-top: -71px
+            @media (max-width: 767px)
+                margin-top: -90px                
+        #wrapper__img4
+            margin-top: -335px 
+            @media (max-width: 1199px)
+                margin-top: -71px
+            @media (max-width: 767px)
+                margin-top: -90px                
+        #wrapper__img5
+            margin-top: -315px 
+            @media (max-width: 1199px)
+                margin-top: -71px
+            @media (max-width: 767px)
+                margin-top: -90px                
+        #wrapper__img6
+            margin-top: -359px 
+            @media (max-width: 1199px)
+                margin-top: -71px
+            @media (max-width: 767px)
+                margin-top: -90px                
+        #wrapper__img7
+            margin-top: -377px 
+            @media (max-width: 1199px)
+                margin-top: -71px
+            @media (max-width: 767px)
+                margin-top: -70px                
+        #wrapper__img8
+            margin-top: -355px 
+            @media (max-width: 1199px)
+                margin-top: -71px
+            @media (max-width: 767px)
+                margin-top: -70px                
+        &__text
+            width: 210px
+            height: auto
+            color: #FFF
+            font-family: Montserrat
+            font-size: 18px
+            font-style: normal
+            font-weight: 400
+            line-height: normal
+
+        &__button
+            position: relative
+            color: #FFF
+            font-family: Montserrat
+            font-size: 14px
+            font-style: normal
+            font-weight: 700
+            line-height: normal
+            margin-top: 10px
+            margin-right: 104px
+            @media (max-width: 1199px)
+                top: 250px
+                right: 40px
+            a
+                text-decoration: none
+                color: #fff
+                @media (max-width: 1199px)
+                    display: block
+                    width: 288.959px
+                    height: 66.407px
+                    border-radius: 20px
+                    background: linear-gradient(180deg, #F37032 0%, #F04C2F 100%)
+                    font-size: 28px
+                    padding-top: 15px
+                    padding-left: 57px
+            img
+                @media (max-width: 1199px)
+                    display: none
+    .footer
+        .right-wrapper
+
+// 3 страница
+.main-section-contacts
+    background-image: url(../img/second-section/background.png)
+    background-size: cover
+    height: 949px
+    border-top: 2px solid #858585
+    border-bottom: 2px solid #858585
+    .contacts-container
+        position: relative
+        max-width: 1440px
+        margin: 0 auto
+        &__button
+            padding-top: 14px
+            padding-left: 40px
+            text-decoration: none
+            display: block
+            width: 172.646px
+            height: 52px
+            border-radius: 30px
+            background: linear-gradient(180deg, #F37032 0%, #F04C2F 100%)
+            color: #FFF
+            font-family: Montserrat
+            font-size: 18px
+            font-style: normal
+            font-weight: 500
+            line-height: normal
+            border: none
+            box-shadow: 5px 4px 4px 0px rgba(0, 0, 0, 0.25)
+        &__button:hover
+            background:#ff7300
+        &__title
+            color: rgba(243, 112, 50, 0.95)
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25)
+            font-family: Montserrat
+            font-size: 30px
+            font-style: normal
+            font-weight: 700
+            line-height: normal
+            margin-top: 76px
+        &__img
+            margin-top: 46px
+            margin-bottom: 41px
+            width: 664px
+            height: 356px
+            border-radius: 15px
+            box-shadow: 5px 4px 4px 1px rgba(0, 0, 0, 0.25) inset
+    .contacts-wrapper
+        display: flex
+        flex-direction: row
+        &__second-wrap
+            margin-left: 40px
+        &__title
+            color: #000
+            font-family: Montserrat
+            font-size: 20px
+            font-style: normal
+            font-weight: 400
+            line-height: normal
+            text-decoration-line: underline
+            margin-top: 36px
+        &__text
+            margin-top: 14px
+            color: #000
+            font-family: Montserrat
+            font-size: 18px
+            font-style: normal
+            font-weight: 400
+            line-height: normal
+
+.feedback
+    background-image: url(../img/second-section/background.png)
+    background-size: cover
+    height: 674px
+    border-bottom: 2px solid #858585
+    .feedback-container
+        position: relative
+        max-width: 1440px
+        height: 674px
+        margin: 0 auto
+        display: flex
+        flex-direction: column
+        &__title
+            color: #F37032
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25)
+            font-family: Montserrat
+            font-size: 30px
+            font-style: normal
+            font-weight: 700
+            line-height: normal
+            padding-top: 54px
+        &__button
+            padding-top: 13px
+            padding-left: 33px
+            text-decoration: none
+            margin-top: 25px
+            width: 172.646px
+            height: 52px
+            border-radius: 30px
+            background: linear-gradient(180deg, #F37032 0%, #F04C2F 100%)
+            color: #FFF
+            font-family: Montserrat
+            font-size: 18px
+            font-style: normal
+            font-weight: 500
+            line-height: normal
+            border: none
+            box-shadow: 5px 4px 4px 0px rgba(0, 0, 0, 0.25)
+
+        .form
+            width: 866px
+            height: 250px
+            display: flex
+            flex-direction: row
+            &__first-wrapper
+                margin-right: 72px
+            &__row
+                position: relative
+                input
+                    margin-top: 22px
+                    width: 397px
+                    height: 54px
+                    border-radius: 15px
+                    border: 1px solid #F04C2F
+                    background: #D9D9D9
+                    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25) inset
+                    text-indent: 25px
+                    font-family: Montserrat
+                    font-size: 18px
+                input::placeholder
+                    color: #606060
+                    font-family: Montserrat
+                    font-size: 18px
+                    font-style: normal
+                    font-weight: 400
+                    line-height: normal
+                input:focus::placeholder
+                    opacity: 0
+
+
+            &__area
+                margin-top: 31px
+                width: 866px
+                height: 158px
+                border-radius: 15px
+                border: 1px solid #F04C2F
+                background: #D9D9D9
+                box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25) inset
+                color: #606060
+                font-family: Montserrat
+                font-size: 18px
+                font-style: normal
+                font-weight: 400
+                line-height: normal
+                text-indent: 25px
+                padding-top: 10px
+                &__area:placeholder
+                    color: #606060
+                    font-family: Montserrat
+                    font-size: 18px
+                    font-style: normal
+                    font-weight: 400
+                    line-height: normal
+                &__area:focus::placeholder
+                    opacity: 0
+        label
+            color: #606060
+            font-family: Montserrat
+            font-size: 18px
+            font-style: normal
+            font-weight: 400
+            line-height: normal
+            position: absolute
+            top: 0px
+            left: 15px  
+            display: none              
+        .msg-text-label
+            position: absolute      
+            top: 475px     
+            left: 34px 
+
+@media (max-width: 1199px)
+    .main-section
+        .container
+            max-width: 960px
+        &__logo
+            margin-top: -19px
+            margin-left: 71px
+            width: 60%
+        &__name
+            display: none
+        &__title
+            margin-top: -80px
+            margin-left: 69px
+            width: 465px
+            height: 130px
+        &__text
+            width: 476px
+            height: 136px
+            margin-left: 69px
+            margin-top: -40px
+        &__button
+            margin-left: -70px
+        .nav-menu__list
+            margin-top: -12px
+            margin-right: 55px
+        .nav-menu__list-item
+            margin-top: 20px
+            font-size: 20px
+        #search
+            display: none
+        
+        .nav-menu__list-image
+            img
+                width: 80px
+
+    .second-section
+        height: 1300px
+        .container
+            max-width: 960px
+        .activity
+            width: 730px
+            height: 406px
+            border: none
+            &__wrapper
+                margin-left: 80px
+                width: 582px
+                height: 406px
+                background-image: url(../img/second-section/image4-adaptive.png) 
+            &__title
+                width: 289.708px
+                font-size: 35px
+                margin-left: 143px
+            &__info-text
+                width: 506.963px
+                height: 176px
+                font-size: 18px
+                color: #FFF
+                margin-left: 44px
+                margin-top: 44px
+            .activity__img
+                display: none
+        .info-btn
+            margin-left: 120px
+            margin-top: 20px
+            .btn-item
+                width: 260px
+                height: 88px
+                margin-left: 21px
+                &__text
+                    display: block
+                    width: 235px
+                    height: 33.757px
+                    font-size: 17px
+                    top: -75px
+                #btn-item__text
+                    top: -60px
+                .btn-item__img
+                    margin: 25px
+                    width: 41.94px
+                    height: 41.712px
+                    @media (max-width: 767px)
+                        margin: 14px
+                        width: 75px
+                        height: 75px
+
+    .third-section
+        height: 530px
+        .container 
+            max-width: 960px
+            margin: 0 auto
+            height: 525px
+        .social
+            max-width: 100%
+            width: 960px
+            height: 525px
+            &__title
+                font-size: 35px
+                width: 484px
+                height: 80.534px
+                margin-left: 90px
+                margin-top: 10px
+            &__info-text
+                width: 286px
+                height: 220px
+                margin-left: 90px
+                margin-top: 10px
+            &__button
+                width: 284px
+                height: 43px
+                margin-left: 90px
+                top: 53px
+            &__img
+                width: 390px
+                height: 230px
+                border-radius: 20px
+                margin-top: 90px
+                margin-left: 60px
+                margin-right: 20px
+            &__date, &__img-text
+                display: none
+        &__wrapper
+            width: 405px        
+    .footer
+        height: 460px
+        .container
+            max-width: 960px
+        .left-wrapper
+            border: none
+            &__img
+                display: none
+            &__text
+                display: none
+        .right-wrapper
+            flex-direction: column
+            margin-right: 290px
+            &__social
+                position: absolute
+                top: 2910px
+            &__text
+                display: none
+            &__title
+                font-size: 25px
+            &__group-1
+                width: 300px
+                margin-left: 150px
+            &__group-2
+                margin-top: 0px
+                margin-left: 150px
+            &__group-3
+                margin-top: 0px
+                margin-left: 150px
+    // 2 страница
+    .header
+        &__logo
+            margin-left: 92px
+        &__text
+            display: none
+        .container
+            max-width: 960px
+        .container__list
+            margin-right: 100px    
+        .container__list-item:last-child
+            display: none
+        .container__list-image
+            img
+                width: 70px
+                height: 70.667px
+    
+    .main-section-info
+        height: 4200px
+        &__title
+            font-size: 35px
+            margin-left: 210px
+        &__container
+            max-width: 960px
+    .wrapper
+        &__text
+            display: none
+        &__img
+            border-top-left-radius: 20px 
+            border-bottom-right-radius: 20px 
+
+    .footer
+        .right-wrapper
+            &__social2
+                position: absolute
+                top: 4740px
+        &__container
+            max-width: 960px
+
+    //3 страница
+    .main-section-contacts
+        height: 1100px
+        .contacts-container
+            max-width: 960px
+            &__title
+                margin-top: 30px
+                margin-left: 90px
+            &__img
+                margin-left: 90px
+            &__button
+                margin-top: 30px
+                margin-left: 90px
+        .contacts-wrapper
+            flex-direction: column
+            margin-left: 90px
+            &__second-wrap
+                margin-left: 0px
+
+    .feedback
+        height: 750px
+        .feedback-container
+            max-width: 960px
+            &__title
+                margin-left: 90px
+            .form
+                display: flex
+                flex-direction: column
+                width: 770px 
+                &__area
+                    margin-left: 90px
+                    width: 469px
+                    height: 158px
+                    margin-top: 155px
+                &__first-wrapper
+                    margin-left: 90px
+                &__second-wrapper
+                    margin-left: 90px
+            &__button
+                margin-left: 90px
+                padding-top: 16px
+                display: block
+                height: 98px
+                margin-top: 40px
+
+    .footer
+        .container
+            max-width: 960px
+        .right-wrapper
+            &__social3
+                position: absolute
+                top: 2380px
+
+@media (max-width: 991px)
+    .main-section
+        height: 720px
+        .container
+            width: 720px
+            .nav-menu
+                &__list-item
+                    font-size: 18px 
+                    margin-right: 25px
+    .second-section
+        .info-btn
+            .btn-item
+                display: flex
+                width: 230px
+                &__text
+                    width: 170px
+                    padding: 2px
+                    top: 21px
+                    left: -15px
+                #btn-item__text
+                    top: 32px
+                    left: -8px
+    .third-section
+        .social
+            &__title
+                margin-top: 0px
+            &__img
+                margin-left: 1px
+                margin-top: 90px
+            &__date, &__img-text
+                display: none
+
+    .footer
+        .right-wrapper
+            margin-right: 30%
+            &__social
+                top: 2930px    
+
+    //2 страница
+    .header
+        #search
+            display: none
+
+    .main-section-info
+        &__container
+            width: 720px
+        &__title
+            margin-left: 100px
+
+@media (max-width: 767px)
+    .main-section
+        height: 720px
+    .container
+        max-width: 540px
+        .nav-menu
+            &__list-item
+                display: none
+            &__list-burger
+                position: absolute
+                margin-top: -20px
+                right: 50px
+            &__list-image
+                position: absolute
+                left: 50px
+                margin-top: -35px
+                img
+                    width: 90px
+    .main-section__header
+        .main-section__logo
+            position: absolute
+            width: 120px
+            left: 30%
+            margin-top: -70px
+
+    .container     
+        .main-section__title
+            margin-left: 23%
+            width: 330px
+            text-align: center
+            font-size: 40px
+        .main-section__text
+            margin-top: -70px
+            margin-left: 14%
+            text-align: center
+            font-size: 20px
+            font-weight: 400
+        .main-section__button
+            margin-top: -40px
+            margin-left: 40px
+
+    // 2 секция
+    .second-section
+        height: 1440px
+        .container
+            max-width: 540px 
+            margin: 0 auto
+            height: 1400px
+        .activity
+            width: 540px
+            height: 1120px
+            margin-left: 0px 
+            margin-right: 0px 
+            margin-top: -362px
+            &__wrapper
+                margin-left: -0px
+                margin-right: 0px
+                width: 590px
+                height: 590px
+                background-image: url(../img/second-section/image4-adaptive.png) 
+                background-size: 650px 590px
+            &__title
+                margin-left: 110px
+                margin-top: -180px
+                font-size: 40px
+            &__info-text
+                margin-left: 90px
+                width: 400px
+                font-weight: 300
+                font-size: 20px
+            &__img
+                width: 580px
+                
+        .info-btn
+            width: 500px
+            margin-top: -410px
+            margin-left: 32px
+            display: flex
+            justify-content: center
+            align-items: center
+            .btn-item
+                width: 100px
+                height: 100px
+                border-radius: 30px
+                margin-right: 50px
+                &__text
+                    width: 180px
+                    display: flex
+                    flex-direction: column
+                    text-align: center
+                    margin-top: 85px
+                    margin-left: -103px
+                    color: #696969
+                    font-size: 16px
+                #btn-item__text
+                    margin-top: 90px
+
+    // 3 секция              
+    .third-section
+        height: 770px
+        .container
+            max-width: 540px 
+            margin: 0 auto
+            height: 770px
+        &__wrapper
+            width: 550px
+        .social
+            width: 570px
+            &__title
+                margin-top: 0px
+                margin-left: 20px
+                font-size: 40px
+                text-align: center
+            &__info-text
+                margin-top: 35px
+                font-size: 20px
+                width: 390px
+                margin-left: 100px
+            &__img
+                margin-top: 395px
+                margin-left: -470px
+                height: 255.255px
+            &__button
+                top: -10px
+                margin-left: 125px
+            &__img-text
+                top: 595px
+                left: 225px
+            &__date
+                top: 625px
+                left: 225px
+    // подвал           
+    .footer
+        .right-wrapper
+            &__social
+                top: 3330px
+    
+    //2 страница
+    .header
+        .container
+            width: 540px 
+            &__list
+            &__list-item
+                display: none
+            &__list-burger
+                position: absolute
+                margin-top: 10px
+                right: 50px
+            &__list-image
+                position: absolute
+                left: 50px
+                margin-top: 20px
+                img
+                    width: 90px  
+                    height: 90px
+
+        &__logo
+            position: absolute
+            width: 120px
+            left: 30%
+            margin-top: 20px
+
+    .main-section-info
+        height: 3900px
+        &__title
+            margin-left: 140px
+            width: 278px
+            text-align: center
+        &__container
+            max-width: 540px 
+        .wrapper
+            margin-top: -30px
+            &__img
+                width: 500px
+                height: 340px
+            &__button
+                left: 0px
+                top: 200px
+                a
+                    border-radius: 40px
+    .footer
+        .right-wrapper
+            &__social2
+                top: 4440px
+
+    // 3 страница
+    .main-section-contacts
+        height: 1050px
+        .contacts-container
+            max-width: 540px 
+            display: flex
+            flex-direction: column
+            &__title
+                margin-left: 170px
+                font-size: 40px
+            &__img
+                margin-left: 65px
+                width: 420px
+                height: 260px
+            .contacts-wrapper
+                margin-left: 20px
+            &__button
+                margin-left: 20px
+    .feedback
+        .feedback-container
+            max-width: 540px 
+            .form
+                max-width: 540px 
+                label
+                    display: block
+                input::placeholder 
+                    color: transparent
+                &__first-wrapper, &__second-wrapper
+                    width: 500px
+                    margin-left: 20px
+                &__row
+                    width: 500px
+            .form__area
+                margin-left: 20px
+            .form__area::placeholder 
+                color: transparent
+            .msg-text-label
+                display: block
+            &__button
+                margin-left: 20px
+    .footer
+        .container
+            max-width: 540px
+        .right-wrapper
+            margin-right: 60px
+            &__social3
+                top: 2330px
+
+
+// Бургер-меню
+#menu__toggle
+  opacity: 0
+
+#menu__toggle:checked + .menu__btn > span 
+  transform: rotate(45deg)
+
+#menu__toggle:checked + .menu__btn > span::before 
+  top: 0
+  transform: rotate(0deg)
+
+#menu__toggle:checked + .menu__btn > span::after 
+  top: 0
+  transform: rotate(90deg)
+
+#menu__toggle:checked ~ .menu__box 
+  position: absolute
+  right: -50px !important
+
+
+.menu__btn 
+  position: absolute
+  top: 20px
+  right: 20px
+  width: 26px
+  height: 26px
+  cursor: pointer
+  color: white
+  z-index: 4
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after 
+  display: block
+  position: absolute
+  width: 70px
+  height: 5px
+  background-color: #F37032
+  transition-duration: .25s
+
+.menu__btn > span::before 
+  content: ''
+  top: -15px
+
+.menu__btn > span::after 
+  content: ''
+  top: 15px
+
+.menu__box 
+  display: block
+  position: fixed
+  right: -500px
+  top: -20px
+  width: 290px
+  height: 450px
+  margin-left: 154px
+  padding: 100px 0px
+  list-style: none
+  background: rgba(355, 355, 355, 0.8)
+  transition-duration: .25s
+  z-index: 3
+  border-top: 3px solid #F37032
+  border-bottom: 3px solid #F37032
+  border-left: 3px solid #F37032
+  border-radius: 160px 0px 0px 160px
+  a
+    color: #fff
+.menu__item 
+  display: block
+  padding: 18px 18px
+  text-decoration: none
+  transition-duration: .25s
+  color: #FFF
+  font-family: Montserrat
+  font-size: 30px
+  font-style: normal
+  font-weight: 500
+  line-height: normal
+  text-align: center
+  margin-bottom: 20px
+  border-radius: 40px
+  margin-left: 20px
+  background: linear-gradient(to left, #F37032 0%, #F04C2F 100%)
+
+
+
+.menu__item:hover 
+  background-color: #F37032
